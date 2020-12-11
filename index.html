@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pisteando</title>
+    <link rel="stylesheet" href="./css/style.css">
+	 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <script src="./js/index.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <div class ="menu">
+			<div class="divEspaciado">
+            <a href="./index.html"><img src="./img/logoHeader.png" alt="Logo Autos"></a>
+			</div>
+			<div class="divEspaciado">
+				<nav>
+					<ul>
+						<li><a href="./index.html">Nosotros</a></li>
+						<li><a href="./index.html">Anuncios</a></li>
+						<li><a href="./index.html">Blog</a></li>
+						<li><a href="./index.html">Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+        </div>
+    </header>
+
+    <h1>Administracion</h1>
+    <div class="banner1">
+    </div>
+    <main>
+        Cambie el color del tema y aprete enter: 
+        <input type="color" id="choose-theme-color">
+    </main>
+    <section class="container" id="dataIn">
+        <form>
+            <input type="hidden" id="txtId" name="id">
+            <label>
+                TITULO: <input type="text" id="txtTitulo" name="titulo" placeholder="Titulo" required>
+            </label>
+			<fieldset>
+                <legend>TRANSACCION</legend>
+                <label for="rdoP"><input type="radio" name="transaccion" id="rdoV" value="venta" checked>VENTA</label>
+                <label for="rdoG"><input type="radio" name="transaccion" id="rdoA" value="alquiler">ALQUILER</label>
+            </fieldset>
+           <label>
+                DESCRIPCION: <input type="text" id="txtDescripcion" name="descripcion" placeholder="Descripcion" required>
+            </label>
+            
+            <label>
+                PRECIO: <input type="number" id="txtPrecio" name="precio" placeholder="Precio" required>
+            </label>
+            <fieldset>
+
+                <legend>Tipos:</legend>
+
+                <input type="checkbox" id="chkTiposA" name="chkTipos" value="cadenas">Tiene cadenas
+
+                <input type="checkbox" id="chkTiposB" name="chkTipos" value="asiento"> Cubre asiento
+
+                <input type="checkbox" id="chkTiposC" name="chkTipos" value="seguro">Tiene seguro
+
+                <input type="checkbox" id="chkTiposD" name="chkTipos" value="aire">Con aire acondicionado
+
+            </fieldset>
+            <fieldset>
+			  <div  class ="menu">                            
+                            <i class="fas fa-door-open"></i>  <input type="number" min="2" max="10" name ="puerta" id="txtPuerta" placeholder="Puerta..." required>
+                            <i class="fas fa-tachometer-alt"></i>  <input  type="number" min = "0" name ="kms" id="txtKm" placeholder="Km..." required >
+                            <i class="fas fa-car-battery"></i>  <input  type="text" name ="potencia" id="txtPotencia" placeholder="Potencia..." required >    
+                          
+               </div>
+     
+            </fieldset>
+            <div class="botones">
+                <button id="alta" name='alta'>Alta Anuncio</button>
+                <button id="modificar" name='modificar'>Modificar Anuncio</button>
+                <button id="baja" name='baja'>Baja Anuncio</button>
+                <input type="reset" id="cancelar" name='cancelar' value='Cancelar'>
+            </div>
+
+        </form>
+    </section>
+    <section class="container">
+        <div id="divTabla">
+            
+        </div>
+    </section>
+    <section id="alert">
+
+    </section>
+    <footer class="nav">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Nosotros</a></li>
+                <li><a href="./index.html">Anuncios</a></li>
+                <li><a href="./index.html">Blog</a></li>
+                <li><a href="./index.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <span class ="divEspaciado">Todos los derechos reservados &copy;</span>
+    </footer>
+</body>
+</html>
